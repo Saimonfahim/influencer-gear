@@ -37,3 +37,24 @@ body {
     height: 414px;
     margin-right: 50px;
 }
+
+
+/* popular collection */
+
+.all-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.collection {
+    border: 1px solid white;
+    width: 329px;
+    height: 476px;
+    padding-left: 30px;
+    padding-top: 17px;
+    box-shadow: 20px 20px 50px 15px grey;
+}
+
+.ratings-info {
+    display: flex;
+}
