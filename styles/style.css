@@ -1,12 +1,22 @@
 body {
     font-family: 'Poppins', sans-serif;
-    width: 1200px;
+    /* width: 1200px;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 
 /* first section */
+
+main {
+    width: 1200px;
+    max-width: 90%;
+    padding-left: 90px;
+}
+
+header h3 {
+    padding-left: 90px;
+}
 
 .first-container {
     display: flex;
@@ -100,4 +110,26 @@ body {
     color: #E02C6D;
     font-weight: 600;
     font-size: 20px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(0, 0, 46);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 400;
 }
