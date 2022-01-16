@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
     /* width: 1200px;
     max-width: 90%;
     margin: 0 auto; */
@@ -11,7 +12,8 @@ body {
 main {
     width: 1200px;
     max-width: 90%;
-    padding-left: 90px;
+    padding-left: 85px;
+    padding-right: 85px;
 }
 
 header h3 {
@@ -20,6 +22,7 @@ header h3 {
 
 .first-container {
     display: flex;
+    margin-bottom: 50px;
 }
 
 .intro-title h1 {
@@ -40,6 +43,7 @@ header h3 {
     padding: 10px 24px;
     border: 0px;
     border-radius: 15px;
+    color: white;
 }
 
 .intro-image img {
@@ -50,6 +54,10 @@ header h3 {
 
 
 /* popular collection section */
+
+.second-container {
+    margin-bottom: 50px;
+}
 
 #second-heading {
     text-align: center;
@@ -132,4 +140,128 @@ footer h3 {
 footer p {
     font-size: 14px;
     font-weight: 400;
+}
+
+.icon .fab {
+    margin-right: 5px;
+}
+
+
+/* Responsiveness */
+
+@media (max-width:668px) {
+    main {
+        width: 100%;
+        /* max-width: 90%; */
+        /* padding-left: 50px;
+        padding-right: 50px; */
+    }
+    header h3 {
+        text-align: center;
+        margin: 20;
+        padding: 20;
+    }
+    .first-container {
+        display: block;
+        margin-bottom: 20px;
+        /* margin-left: 0;
+        padding-left: 0; */
+    }
+    .intro-title h1 {
+        text-align: center;
+        ;
+    }
+    .intro-title p {
+        text-align: center;
+        margin: 30px;
+    }
+    .intro-title button {
+        margin-left: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .intro-image {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        /* display: block; */
+    }
+    .intro-image img {
+        width: 257px;
+        height: 257px;
+        margin-left: 20px;
+    }
+    #second-heading {
+        text-align: center;
+    }
+    .all-collections {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+        padding: 0;
+    }
+    .collection {
+        padding: 10;
+        margin-bottom: 40px;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width:992px) and (min-width:669px) {
+    main {
+        width: 100%;
+        /* max-width: 90%; */
+        /* padding-left: 50px;
+        padding-right: 50px; */
+    }
+    header h3 {
+        text-align: center;
+    }
+    .first-container {
+        display: block;
+        margin-bottom: 20px;
+        /* margin-left: 0;
+        padding-left: 0; */
+    }
+    .intro-title h1 {
+        text-align: center;
+        ;
+    }
+    .intro-title p {
+        text-align: center;
+        margin: 30px;
+    }
+    .intro-title button {
+        margin-left: 260px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .intro-image {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        /* display: block; */
+    }
+    .intro-image img {
+        margin-left: 100px;
+    }
+    #second-heading {
+        text-align: center;
+    }
+    .all-collections {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .collection {
+        padding: 10;
+        margin-bottom: 40px;
+        /* grid-column-gap: 10px; */
+    }
+    footer {
+        width: 100%;
+    }
 }
